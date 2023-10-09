@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1008px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+.nav__menu-btn {
+  height: 60px;
+  border: none;
+  margin: 35px 0;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.user-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.switch-container {
+  margin: auto 0;
+  position: relative;
+}
+
+.switch-play {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  transform: translate(8px, 10px);
+  z-index: 1;
+}
+
+.switch-train {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  transform: translate(35px, 10px);
+  z-index: 1;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 79px;
+  height: 35px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: lightgrey;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: 0 0px 15px #2020203d;
+  background-color: white;
+}
+
+input:checked + .slider {
+  background-color: lightgreen;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(45px);
+  -ms-transform: translateX(45px);
+  transform: translateX(45px);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+.slider.round {
+  border-radius: 25px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.display-none {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .nav-container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .nav-container {
+    margin: 0 20px;
+  }
+}

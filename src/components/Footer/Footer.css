@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+}
+
+.footer-container {
+  max-width: 1008px;
+  height: 80px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-container p {
+  margin-top: 10px;
+}
+
+.footer-year {
+  font-size: 12px;
+}
+
+.footer-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-link:hover {
+  color: red;
+}
+
+@media screen and (max-width: 1050px) {
+  .footer-container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .footer-container {
+    margin: 0 20px;
+  }
+}

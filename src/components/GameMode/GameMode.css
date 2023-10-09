@@ -1,0 +1,50 @@
+.title-wrapper {
+  max-width: 1008px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-wrapper h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin: 15px auto;
+}
+
+.display-none {
+  display: none;
+}
+
+.start-game-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.start-game-btn:hover {
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 1050px) {
+  .title-wrapper {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .title-wrapper {
+    margin: 0 25px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .title-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
